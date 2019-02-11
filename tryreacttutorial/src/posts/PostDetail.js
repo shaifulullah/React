@@ -9,6 +9,8 @@ export default class PostDetail extends Component {
     titleWasClicked(event) {
         event.preventDefault()
         //alert('message')
+        const { dataCallback } = this.props; //calling my dataCallback while clicking on title
+        dataCallback("hello world testing")
     }
     render() {
         const { post } = this.props
